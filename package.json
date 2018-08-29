@@ -1,0 +1,38 @@
+{
+  "name": "time-trigger",
+  "version": "0.0.1",
+  "description": "Gets triggered at a configurable time.",
+  "main": "dist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -p",
+    "lint": "eslint --ignore-path .gitignore --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00-1/time-trigger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00-1/time-trigger/issues"
+  },
+  "homepage": "https://github.com/00-1/time-trigger#readme",
+  "dependencies": {
+    "request": "^2.87.0",
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-root-import": "^6.1.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack": "^4.16.5",
+    "webpack-command": "^0.4.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
