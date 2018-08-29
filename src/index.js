@@ -12,6 +12,26 @@ export default (event, context) => {
   // now log the full event object
   console.log(JSON.stringify(event));
 
+  console.log(context)
+  console.log(context.params)
+        console.log(context.params.timestamp)
+
+console.log(process.env.TIME)
+
+const target = process.env.TIME
+const now = context.params.timestamp
+
+if (now > target) {
+        console.log('target passed')
+} else {
+        console.log('target not reached')
+}
+
+
+
+
+
+
   /*const db = admin.firestore();
   const doc = db.collection('time').doc('a');
 
