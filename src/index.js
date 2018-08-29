@@ -1,8 +1,8 @@
-import admin from 'firebase-admin';
-import { config } from 'firebase-functions';
+//import admin from 'firebase-admin';
+//import { config } from 'firebase-functions';
 
 // initialise app
-admin.initializeApp(config().firebase);
+//admin.initializeApp(config().firebase);
 
 // handle incoming webhook
 export default (event, context) => {
@@ -12,7 +12,7 @@ export default (event, context) => {
   // now log the full event object
   console.log(JSON.stringify(event));
 
-  const db = admin.firestore();
+  /*const db = admin.firestore();
   const doc = db.collection('time').doc('a');
 
   doc.get()
@@ -24,5 +24,5 @@ export default (event, context) => {
 
       // log the message
       return doc.set({});
-    }).catch(err => `Error getting accessing database. ${err}`);
+    }).catch(err => `Error getting accessing database. ${err}`);*/
 };
